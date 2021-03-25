@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reservia</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7e4732a8a2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <!--section navigation-->
-    <header>
-        <a href="#"><img src="images/logo/Reservia.svg" alt=""></a>
+     <!--section navigation-->
+     <header>
+        <a href="#" ><img class="logo"
+            src="images/logo/Reservia.svg" alt=""></a>
         <div class="navigation">
             
              <a href="#hebergement">Hébergement</a>
              <a href="#activités">Activités</a>
              <a href="#">S'inscrire</a>
         </div>
-    </header>
+   
        
        <!--search__form-->
     <section class="search"> 
@@ -31,23 +31,43 @@
         </p>
         
         <form action="#" class="search__form">
-        <label for="search"><i class="fas fa-map-marker-alt fa-1x" id="map"></i></label>
+        <i class="fas fa-map-marker-alt fa-1x" id="map"></i>
         <input type="search" id="search" name="search" class="search__form--input">
-        <input type="submit" class="search__form--button" value="Rechercher">
-         
+        <input type="submit" class="search__form--button" value="Rechercher">  
         </form>
 
         <div class="filter">
             <h2>Filtres</h2>
-            <button class="filter__button--active" onclick="filterEconomique" ><i class="fas fa-money-bill-wave" id="bill"></i>Économique</button>
-            <button class="filter__button--active" onclick="filterFamilial"><i class="fas fa-child" id="fam"></i>Familial</button>
-            <button class="filter__button--active" onclick="filterRomantique"><i class="fas fa-money-bill-wave" id="heart"></i>Romantique</button>
-            <button class="filter__button--active" onclick="filterAnimaux"><i class="fas fa-dog" id="dog"></i>Économique</button>
+            <a href="#" class="btn__bill">
+                <div class="btn__icon">
+                    <i class="fas fa-money-bill-wave" ></i>
+                </div>
+                <span class="name">Economique</span>
+            </a>
+            <a href="#" class="btn__fam">
+                <div class="btn__icon">
+                    <i class="fas fa-child" ></i>
+                </div>
+                <span class="name">Familial</span>
+            </a>
+            <a href="#" class="btn__heart">
+                <div class="btn__icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <span class="name">Romantique</span>
+            </a>
+            <a href="#" class="btn__dog">
+                <div class="btn__icon">
+                    <i class="fas fa-dog" ></i>
+                </div>
+                <span class="name">Animaux autorisés</span>
+            </a> 
         </div>
 
         <p class="info"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
     </section> 
-    
+
+    </header>
 
     <!--hébergements-->    
     <div id="hebergement">
@@ -206,7 +226,7 @@
 
 <div id="activités">
         <h2>Activités à Marseille</h2>
-    <div class="right__container--cards">
+    <div class="container__cards">
         <div class="card__1">
            <a href="#">
                <div class="card">
