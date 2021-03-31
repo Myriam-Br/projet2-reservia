@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,13 +14,17 @@
      <!--section navigation-->
      <header>
         <a href="#" ><img class="logo"
-            src="images/logo/Reservia.svg" alt=""></a>
-        <div class="navigation">
-            
-             <a href="#hebergement">Hébergement</a>
-             <a href="#activités">Activités</a>
-             <a href="#">S'inscrire</a>
-        </div>
+            src="images/logo/Reservia.svg" alt="">
+        </a>
+        <nav>
+            <ul class="navigation__items">
+             <li><a href="#hebergement">Hébergements</a></li>
+             <li><a href="#activités">Activités</a></li>
+             <li class="sign-in"><a href="#">S'inscrire</a></li>
+            </ul>
+        </nav>   
+    
+    </header>
    
        
        <!--search__form-->
@@ -67,7 +71,7 @@
         <p class="info"><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
     </section> 
 
-    </header>
+ 
 
     <!--hébergements-->    
     <div id="hebergement">
@@ -99,7 +103,7 @@
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star checked"></i>
                             </div>
                         </div>
                     </a>
@@ -129,7 +133,7 @@
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
-                                <i class="fas fa-star checked"></i>
+                                <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
                         </div>
@@ -158,7 +162,7 @@
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
                                 <i class="fas fa-star checked"></i>
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star checked"></i>
                             </div>
                         </div>
                     </a>
@@ -181,7 +185,7 @@
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
                             <i class="fas fa-star checked"></i>
-                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star checked"></i>
 
                         </div>
                     </div>
@@ -222,7 +226,7 @@
 
 
 
-    <!--section activités| à convertir en BEM-->
+    <!--section activités-->
 
 <div id="activités">
         <h2>Activités à Marseille</h2>
@@ -275,5 +279,33 @@
 </div>
     
     <!--footer-secion-->
+<footer>
+<div class="footer__container">
+    <div class="footer__list">
+        <h3>A propos</h3>
+        <ul class="footer__list1">
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales de vente</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+    </div>
+    <div class="footer__list">
+        <h3>Nos hébergements</h3>
+        <ul class="footer__list2">
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+    </div>
+    <div class="footer__list">
+        <h3>Assistance</h3>
+        <ul class="footer__list3">
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</footer>
 </body>
 </html>
