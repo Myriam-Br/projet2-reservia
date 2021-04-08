@@ -128,9 +128,11 @@ width: auto;
     height: 60px;
     border-radius: 20px;
 }
+
 .hide__desktop{
     width: 60px;
     height: 60px;
+    padding: 0px;
     
 }
 .fa-search{
