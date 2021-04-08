@@ -931,6 +931,7 @@ width: auto;
     .footer__list{
       font-size: 13px;
        width: 100%;
+       margin-left: 20px;
     }
 
 }
