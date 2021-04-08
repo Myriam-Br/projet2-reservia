@@ -131,8 +131,16 @@ width: auto;
 .hide__desktop{
     width: 60px;
     height: 60px;
+    
+}
+.fa-search{
+    top: 25%;
+    bottom: 25%;
+    left: 25%;
+    right: 25%;
     position: absolute;
 }
+
 
 
 .search__form--input{
