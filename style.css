@@ -42,13 +42,12 @@ width: auto;
 }
 
 .sign-in {
-       font-size: 18px;
-       font-weight: bold;
-       color: #0065FC;
-       float: right;
-       margin-right: 30px;  
-       margin-top: 25px; 
-       
+    font-size: 18px;
+    font-weight: bold;
+    color: #0065FC;
+    float: right;
+    margin-right: 30px;  
+    margin-top: 25px;       
    }
    
 .navigation__items {
@@ -132,8 +131,9 @@ width: auto;
 .hide__desktop{
     width: 60px;
     height: 60px;
-    line-height: 60px;
+    line-height: 60px !important;
     text-align: center;
+
 
 }
 
@@ -173,56 +173,67 @@ width: auto;
     border: #dbdbdb solid 2px;
     display: flex;
     flex-wrap: nowrap;
-    transition: all 0.3s;
-   
+    transition: all 0.3s; 
+    position: relative;
+    padding-bottom: 10px; 
+    transition: all 0ms; 
+    transform: scale(1);      
 }
-.btn__item:hover{
-    background-color: rgb(235, 235, 235);
-    transition: all 0.3s;
 
+.btn__item:hover{   
+    color: #0065FC;
+    transform: scale(1.01);
+    
 }
 
 .btn__item i{
  background-color: #deebff;
- font-size: 20px;
+ font-size: 18px;
  color:#0065FC;
- height: 50px;
- width: 50px;
+ height: 42px;
+ width: 42px;
  text-align: center;
- line-height: 50px;
- border-radius: 30px;
+ line-height: 42px;
+ border-radius: 30px; 
+ position: absolute;
+ top: -2px;
+ bottom: 0px;
+ left: -5px;
 }
 
+
+
 .btn__item .btn__name{
-    margin-top: 15px;
-    margin-left: 5px;
+    margin-top: 8px;
+    margin-left: 45px;
     font-weight: bold;
     font-size: 17px; 
-    width: fit-content;
+    width: fit-content; 
+   
 }
 
 /*message info*/
-.fa-info{
+.fa-info-icon{
     border: #dddddd solid 1.5px;
     text-align: center;
     width: 25px;
     height: 25px;
-    line-height: 25px;
+    line-height: 25px  !important;
     border-radius: 20px;
     color: #0065FC;
-     margin-right: 10px;  
+    margin-right: 10px; 
 }
 .info{
-    font-size: 15px;
+    font-size: 15px; 
 }
 
-.right__container{
+.mostpopular{
     background-color: #f2f2f2;
     padding: 40px 25px;
     margin-bottom: 30px;
 }
 
-.right__container--title{
+.mostpopular--title{
     display: flex;
     justify-content: space-between;
 }
@@ -231,8 +242,7 @@ width: auto;
     font-size: 25px;
 }
 
-
-.right__container--cards .card{
+.mostpopular--cards .card{
   background-color: white;
   height: 145px;
   padding: 5px;
@@ -241,14 +251,13 @@ width: auto;
   border-radius: 20px;
   display: flex; 
   box-shadow: 1px 1px 6px 4px rgb(0, 0, 0,0.1);
-  transition: all 0.3s;   
+  transition: all 300ms;   
 }
 
-.right__container--cards .card:hover{
-    box-shadow: 2px 2px 6px 5px rgb(0, 0, 0,0.2);
-    transition: all 0.3s;   
+.mostpopular--cards .card:hover{
+    box-shadow: 2px 2px 6px 6px rgb(0, 0, 0,0.2);  
 }
-.right__container--cards .card__description{
+.mostpopular--cards .card__description{
     font-size: 15px;
     display: flex; 
     flex-direction: column;
@@ -257,13 +266,18 @@ width: auto;
     margin-bottom: 8px;
 }
 
-.right__container--cards .card__description--text{
+.mostpopular--cards .card__description--text{
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 15px;
     width: 90%;  
 }
 
-.right__container--cards .card__image{
+.mostpopular--cards .card__description--text p{
+    font-size: 14px;
+
+}
+
+.mostpopular--cards .card__image{
     height: 100%;
     width: 35%;
     object-fit: cover;
@@ -281,35 +295,35 @@ width: auto;
 
 /*left__container -> mettre en horizontal à partir de min 751)*/
 
-.left__container{
+.citylodging{
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
 
-.left__container h2{
+.citylodging h2{
     margin-left: 25px;
 }
-.left__container .plus{
+.citylodging .plus{
     margin-left: 25px;
     font-size: 18px;
     font-weight: bold;
     transition: all 0.3s;
 }
 
-.left__container .plus:hover{
+.citylodging .plus:hover{
     font-size: 19px;
     transition: all 0.3s;
 }
 
-.left__container--cards{
+.citylodging--cards{
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 15px;
 }
 
-.left__container--cards .card{
+.citylodging--cards .card{
     background-color: white;
     height: 210px;
     padding: 5px;
@@ -317,27 +331,29 @@ width: auto;
     margin-top: 35px;
     border-radius: 20px;
     box-shadow: 1px 1px 6px 4px rgb(0, 0, 0,0.1);
-    transition: all 0.3s;
+    transition: all 300ms;
 }
 
-.left__container--cards .card:hover{
-    box-shadow: 2px 2px 6px 5px rgb(0, 0, 0,0.2);
-    transition: all 0.3s;   
+.citylodging--cards .card:hover{
+    box-shadow: 2px 2px 6px 6px rgb(0, 0, 0,0.2);
 }
 
-.left__container .card__description{
+.citylodging .card__description{
     margin-left: 10px;
 }
 
-.left__container .card__description--text {
+.citylodging .card__description--text {
     line-height: 30px;
     margin-bottom: 5px;
     font-size: 15px;
     width: 100%;  
 }
 
+.citylodging .card__description--text p{
+    font-size: 14px;
+}
 
-.left__container--cards .card__image{
+.citylodging--cards .card__image{
     height: 55%;
     width: 100%;
     object-fit: cover;
@@ -379,12 +395,11 @@ width: auto;
     margin-bottom: 25px;
     border-radius: 20px;
     box-shadow: 1px 1px 6px 4px rgb(0, 0, 0,0.1);
-    transition: all 0.3s;
+    transition: all 300ms;
 }
 
 .container__cards .card:hover{
-    box-shadow: 2px 2px 6px 5px rgb(0, 0, 0,0.2);
-    transition: all 0.3s;   
+    box-shadow: 2px 2px 6px 6px rgb(0, 0, 0,0.2);
 }
 
 .container__cards .card__image{
@@ -404,7 +419,7 @@ width: auto;
 .footer__list{
     margin-bottom: 30px;
     line-height: 26px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .footer__list h3{
@@ -418,6 +433,10 @@ width: auto;
 
     .search__form{
         width: 400px;
+    }
+
+    .search h1{
+        font-size: 20px;
     }
     .hide__desktop{
         display: none;
@@ -438,23 +457,40 @@ width: auto;
         flex-direction: column;
     }
 
- 
     .btn__item{
         margin-right: 8px;
     }
-   
+
+  
     .filter h2{
         margin-top: 12px;
         margin-right: 20px;
         font-size: 25px;
     }
-    .btn__filter .btn__name{
-        margin-top: 15px;
-        margin-left: 10px;
+    .btn__item .btn__name{
+        margin-top: 8px;
+        margin-left: 45px;
         font-weight: bold;
         font-size: 17px; 
         width: fit-content;
         padding-right: 10px;
+    }
+
+    .mostpopular--cards .card__description--text{
+        font-size: 15px;
+    }
+    
+    .mostpopular--cards .card__description--text p{
+        font-size: 15px;
+    
+    }
+
+    .citylodging .card__description--text {
+        font-size: 15px;
+    }
+    
+    .citylodging .card__description--text p{
+        font-size: 15px;
     }
 
     .footer__container{
@@ -463,8 +499,12 @@ width: auto;
         
     }
 
+    .container__cards h3{
+        font-size: 15px;
+    }
+
     .footer__container .footer__list{
-        font-size: 16px;
+        font-size: 13px;
         line-height: 22px;
         padding-right: 2%;
 
@@ -493,7 +533,7 @@ width: auto;
         flex-wrap: nowrap;
     }
     .navigation__items {
-        line-height: 83px;
+        line-height: 90px;
         margin-top: 0;
     }
 
@@ -524,8 +564,10 @@ width: auto;
     .sign-in{
         right: 0px;
         top: 0;
+        line-height: 90px;
         position: absolute;
-        margin-top: 30px;
+        margin-top: 0px;
+        border-top: white solid 2px;
      }
  
      .search__form{
@@ -533,11 +575,11 @@ width: auto;
      }
  
      .search h1{
-         font-size: 28px;
+         font-size: 22px;
      }
  
      .search p:not(.info){
-         font-size: 22px;
+         font-size: 16px;
      }
  
      .hide__desktop{
@@ -554,13 +596,13 @@ width: auto;
          font-size: 20px;
      }
 
-     #hebergement{
+     #housing{
          display: flex;
          flex-direction: column;
          
      }
 
-    #hebergement .left__container{
+    #housing .citylodging{
         padding: 0;
         margin: 0;
         width: 100%;
@@ -569,34 +611,55 @@ width: auto;
         margin-bottom: 20px;
 
     }
-
-    #hebergement .left__container .card{
+    #housing .citylodging .card{
         margin-right: 3%;
     }
 
-    .left__container--cards{
+    .citylodging--cards{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 2px 20px;
         margin: 0;
         margin-bottom: 10px;
-    }
-    .left__container--link{
+    } 
+    
+    .citylodging--link{
         width: 31%;
     } 
+    .citylodging .card__description--text {
+        font-size: 16px;
+    }
+    
+    .citylodging .card__description--text p{
+        font-size: 15px;
+    }
 
-    #hebergement .right__container{     
+    .mostpopular--cards .card__description--text{
+        font-size: 16px;    
+    }
+    
+    .mostpopular--cards .card__description--text p{
+        font-size: 15px;
+    
+    }
+    #housing .mostpopular{     
         width: 100%;
     }
-   #hebergement .right__container .card{
+    #housing .mostpopular .card{
       width: 95%;
-   }
+   } 
+   
+   
     
     #activities .container__cards{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-between;  
+    }
+
+    .container__cards h3{
+        font-size: 16px;
     }
 
 
@@ -649,7 +712,7 @@ width: auto;
         justify-content: space-between;
     }
     .footer__container .footer__list{
-        font-size: 16px;
+        font-size: 13px;
         line-height: 30px;
         padding-right: 2%;
 
@@ -718,7 +781,8 @@ width: auto;
          top: 0;
          position: absolute;
          margin-top: 0px;
-         line-height: 86px;
+         line-height: 90px;
+         border-top: white solid 2px;
       }
 
       .search{
@@ -731,11 +795,11 @@ width: auto;
       }
   
       .search h1{
-          font-size: 28px;
+          font-size: 25px;
       }
   
       .search p:not(.info){
-          font-size: 22px;
+          font-size: 18px;
       }
   
       .hide__desktop{
@@ -753,13 +817,13 @@ width: auto;
       }
 
 
-      #hebergement{
+      #housing{
           display: flex;
           flex-direction: row-reverse;
           margin: 20px 40px;
       }
 
-      #hebergement .left__container{
+      #housing .citylodging{
           width: 68%;
           height: auto;
           margin-right: 3%;
@@ -769,33 +833,39 @@ width: auto;
           padding-right: 15px;
       }
 
-      .left__container h2{
+      .citylodging h2{
           margin-top: 15px;
       }
 
-      .left__container--link{
+      .citylodging--link{
           width: 31%;
       }
-      .left__container--cards{
+      .citylodging--cards{
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
-      }
-      #hebergement .left__container .card__description--text{
-          width: 100%;
-          line-height: 23px;
-          font-size: 15px;
-          margin-top: 10px;
-      }
+      }  
+   
+     .citylodging .card__description--text p{
+        font-size: 15px;
+    }
 
-      #hebergement .right__container{
-          width: 28%;
-          border-radius: 20px;
-      }
-      #hebergement .right__container .card__description--text{
+      #housing .citylodging .card__description--text{
+        width: 100%;
+        line-height: 23px;
+        margin-top: 10px;
         font-size: 15px;
       }
 
+      #housing .mostpopular{
+          width: 28%;
+          border-radius: 20px;
+      }
+      #housing .mostpopular .card__description--text{
+        font-size: 15px;
+      }
+
+    
       #activities{
         margin: 0px 20px;
       }
@@ -804,6 +874,10 @@ width: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .container__cards h3{
+        font-size: 16px;
     }
 
 
@@ -855,7 +929,7 @@ width: auto;
     }
 
     .footer__list{
-        font-size: 18px;
+      font-size: 13px;
        width: 100%;
     }
 
