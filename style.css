@@ -65,6 +65,7 @@ width: auto;
       width: 100%;
       text-align: center;
    }
+
 .navigation__items a{
        color: #0065FC;
    }
@@ -328,7 +329,7 @@ width: auto;
     margin-left: 10px;
 }
 
-.left__container .card__description--text{
+.left__container .card__description--text {
     line-height: 30px;
     margin-bottom: 5px;
     font-size: 15px;
@@ -501,6 +502,7 @@ width: auto;
         padding-left:50px;    
         padding-right:50px;   
         border: none; 
+        border-top: white solid 2px;
     }
 
 
@@ -687,10 +689,11 @@ width: auto;
         text-align: center;   
         padding-left:50px;    
         padding-right:50px;   
-        border: none; 
+        border: none;  
+        border-top: white solid 2px;
     }
 
-
+ 
     .navigation__items li:hover{
         border-top: #0065FC solid 2px;
         border-bottom: none;   
